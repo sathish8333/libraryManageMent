@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class UserValidatorImpl implements ConstraintValidator<UserValidator, User> {
+public class   UserValidatorImpl implements ConstraintValidator<UserValidator, User> {
     public List<String> errors = new ArrayList<>();
     public Boolean isValid = true;
     @Override
@@ -29,7 +29,7 @@ public class UserValidatorImpl implements ConstraintValidator<UserValidator, Use
     }
 
     private void verifyUserType(User user){
-        if (user.getUserType().isEmpty()|| null == user.getUserType() || !Arrays.asList(LmsConstants.VALID_USER_TYPE).contains(user.getUserType().toUpperCase()))
+        if (user.getUserType().isEmpty() || !Arrays.asList(LmsConstants.VALID_USER_TYPE).contains(user.getUserType().toUpperCase()))
             errors.add(LmsConstants.USER_TYPE_MISMATCH);
     }
 
