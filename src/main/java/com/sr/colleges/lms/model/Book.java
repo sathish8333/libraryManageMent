@@ -21,7 +21,7 @@ public class Book {
     private String bookName;
     private String bookDescription;
     private String bookAuthor;
-    private int noOfBooksAvailable;
+    private int noOfBooksAvailable = 1;
     @Lob
     @Column(name = "imagedata",length = 1000)
     private byte[] image;

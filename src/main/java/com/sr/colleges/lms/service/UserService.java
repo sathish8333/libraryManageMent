@@ -1,7 +1,6 @@
 package com.sr.colleges.lms.service;
 
 import com.sr.colleges.lms.model.Book;
-import com.sr.colleges.lms.model.User;
 
 import java.util.List;
 

@@ -1,7 +1,6 @@
 package com.sr.colleges.lms.controller;
 
 import com.sr.colleges.lms.model.Book;
-import com.sr.colleges.lms.model.User;
 import com.sr.colleges.lms.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
